@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Http\Middleware;
+namespace TelusApp\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

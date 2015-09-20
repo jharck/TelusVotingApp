@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Exceptions;
+namespace TelusApp\Exceptions;
 
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;

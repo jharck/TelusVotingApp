@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Providers;
+namespace TelusApp\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'PlatziPHP\Http\Controllers';
+    protected $namespace = 'TelusApp\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.

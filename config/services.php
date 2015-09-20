@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => PlatziPHP\User::class,
+        'model'  => TelusApp\User::class,
         'key'    => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

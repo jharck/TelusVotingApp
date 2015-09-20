@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Console;
+namespace TelusApp\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        \PlatziPHP\Console\Commands\Inspire::class,
+        \TelusApp\Console\Commands\Inspire::class,
     ];
 
     /**

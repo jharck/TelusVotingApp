@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Http;
+namespace TelusApp\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -13,11 +13,11 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \PlatziPHP\Http\Middleware\EncryptCookies::class,
+        \TelusApp\Http\Middleware\EncryptCookies::class,
         \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \PlatziPHP\Http\Middleware\VerifyCsrfToken::class,
+        \TelusApp\Http\Middleware\VerifyCsrfToken::class,
     ];
 
     /**
@@ -26,8 +26,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \PlatziPHP\Http\Middleware\Authenticate::class,
+        'auth' => \TelusApp\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest' => \PlatziPHP\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \TelusApp\Http\Middleware\RedirectIfAuthenticated::class,
     ];
 }

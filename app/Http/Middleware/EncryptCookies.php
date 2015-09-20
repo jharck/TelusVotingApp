@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Http\Middleware;
+namespace TelusApp\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncrypter;
 

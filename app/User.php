@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP;
+namespace TelusApp;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

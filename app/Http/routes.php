@@ -11,6 +11,9 @@
 |
 */
 
+
+
+
 Route::get('auth/login', [
     'uses' => 'AuthController@index',
     'as'   => 'auth_show_path',
@@ -30,38 +33,38 @@ Route::group(['middleware' => 'auth'], function () {
         'as'   => 'home_path',
     ]);
 
-    Route::get('posts/create', [
-        'uses' => 'PostsController@create',
-        'as'   => 'post_create_path',
+    Route::get('committees/create', [
+        'uses' => 'CommitteesController@create',
+        'as'   => 'committee_create_path',
     ]);
-    Route::post('posts/create', [
-        'uses' => 'PostsController@store',
-        'as'   => 'post_store_path',
+    Route::post('committees/create', [
+        'uses' => 'CommitteesController@store',
+        'as'   => 'committee_store_path',
     ]);
 
-    Route::get('posts/{id}/edit', [
-        'uses' => 'PostsController@edit',
-        'as'   => 'post_edit_path',
+    Route::get('committees/{id}/edit', [
+        'uses' => 'CommitteesController@edit',
+        'as'   => 'committee_edit_path',
     ])->where('id', '[0-9]+');
 
-    Route::patch('posts/{id}/edit', [
-        'uses' => 'PostsController@update',
-        'as'   => 'post_patch_path',
+    Route::patch('committees/{id}/edit', [
+        'uses' => 'CommitteesController@update',
+        'as'   => 'committee_patch_path',
     ])->where('id', '[0-9]+');
 
-    Route::delete('posts/{id}/edit', [
-        'uses' => 'PostsController@destroy',
-        'as'   => 'post_delete_path',
+    Route::delete('committees/{id}/edit', [
+        'uses' => 'CommitteesController@destroy',
+        'as'   => 'committee_delete_path',
     ])->where('id', '[0-9]+');
 
-    Route::get('posts/{id}', [
-        'uses' => 'PostsController@show',
-        'as'   => 'post_show_path',
+    Route::get('committees/{id}', [
+        'uses' => 'CommitteesController@show',
+        'as'   => 'committee_show_path',
     ])->where('id', '[0-9]+');
 });
 
-Route::group(['prefix' => 'api'], function () {
+Route::group(['prefix' => 'service.php'], function () {
     Route::get('/', function () {
-        return 'Hola soy tu api';
+        return '';
     });
 });

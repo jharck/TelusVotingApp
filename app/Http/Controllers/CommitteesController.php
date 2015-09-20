@@ -1,13 +1,13 @@
 <?php
 
-namespace PlatziPHP\Http\Controllers;
+namespace TelusApp\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
-use PlatziPHP\Post;
+use TelusApp\Committee;
 
-class PostsController extends Controller
+class CommitteesController extends Controller
 {
     /**
      * Show the form for creating a new resource.
@@ -16,7 +16,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('posts.create');
+        return view('committees.create');
     }
 
     /**
@@ -34,18 +34,16 @@ class PostsController extends Controller
 
         if ($validator->fails()) {
             return redirect()
-                ->route('post_create_path')
+                ->route('committee_create_path')
                 ->withErrors($validator)
                 ->withInput();
         }
 
-        $post = new Post;
-        $post->title = $request->get('title');
-        $post->body = $request->get('body');
-        $post->author_id = Auth::id();
-        $post->save();
+        $committees = new Committee;
+        $committees->committee_name = $request->get('title');
+        $committees->save();
 
-        return redirect()->route('post_show_path', $post->id);
+        return redirect()->route('committee_show_path', $committees->id);
     }
 
     /**
@@ -56,9 +54,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        $post = Post::findOrFail($id);
-
-        return view('post', ['post' => $post]);
+        $committees = Committee::findOrFail($id);
+        return view('committee', ['committee' => $committees]);
     }
 
     /**
@@ -69,9 +66,9 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        $post = Post::findOrFail($id);
+        $committees = Committee::findOrFail($id);
 
-        return view('posts.edit', ['post' => $post]);
+        return view('committees.edit', ['committee' => $committees]);
     }
 
     /**
@@ -83,12 +80,12 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $post = Post::findOrFail($id);
-        $post->title = $request->get('title');
-        $post->body = $request->get('body');
-        $post->save();
+        $committees = Committee::findOrFail($id);
+        $committees->title = $request->get('title');
+        $committees->body = $request->get('body');
+        $committees->save();
 
-        return redirect()->route('post_show_path', $post->id);
+        return redirect()->route('committee_show_path', $committees->id);
     }
 
     /**
@@ -99,6 +96,6 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        return Post::delete($id);
+        return Committee::delete($id);
     }
 }

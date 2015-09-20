@@ -1,10 +1,10 @@
 <?php
 
-namespace PlatziPHP\Providers;
+namespace TelusApp\Providers;
 
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Support\ServiceProvider;
-use PlatziPHP\Composers\CurrentUserComposer;
+use TelusApp\Composers\CurrentUserComposer;
 
 class ViewComposerServiceProvider extends ServiceProvider
 {

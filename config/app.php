@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +78,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY', 'SomeRandomString'),
+    'key' => env('APP_KEY', 'NMqCvr4ftp6EfRRnDvB793PsKhtm8opx'),
 
     'cipher' => 'AES-256-CBC',
 
@@ -140,11 +140,11 @@ return [
         /*
          * Application Service Providers...
          */
-        PlatziPHP\Providers\AppServiceProvider::class,
-        PlatziPHP\Providers\AuthServiceProvider::class,
-        PlatziPHP\Providers\EventServiceProvider::class,
-        PlatziPHP\Providers\RouteServiceProvider::class,
-        PlatziPHP\Providers\ViewComposerServiceProvider::class,
+        TelusApp\Providers\AppServiceProvider::class,
+        TelusApp\Providers\AuthServiceProvider::class,
+        TelusApp\Providers\EventServiceProvider::class,
+        TelusApp\Providers\RouteServiceProvider::class,
+        TelusApp\Providers\ViewComposerServiceProvider::class,
 
     ],
 

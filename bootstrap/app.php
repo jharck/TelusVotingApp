@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    PlatziPHP\Http\Kernel::class
+    TelusApp\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    PlatziPHP\Console\Kernel::class
+    TelusApp\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    PlatziPHP\Exceptions\Handler::class
+    TelusApp\Exceptions\Handler::class
 );
 
 /*

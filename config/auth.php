@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'model' => PlatziPHP\User::class,
+    'model' => TelusApp\User::class,
 
     /*
     |--------------------------------------------------------------------------

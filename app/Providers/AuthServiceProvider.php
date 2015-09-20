@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Providers;
+namespace TelusApp\Providers;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'PlatziPHP\Model' => 'PlatziPHP\Policies\ModelPolicy',
+        'TelusApp\Model' => 'TelusApp\Policies\ModelPolicy',
     ];
 
     /**

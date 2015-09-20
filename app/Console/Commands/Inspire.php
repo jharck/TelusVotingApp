@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Console\Commands;
+namespace TelusApp\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

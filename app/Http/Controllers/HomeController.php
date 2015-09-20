@@ -1,9 +1,9 @@
 <?php
 
-namespace PlatziPHP\Http\Controllers;
+namespace TelusApp\Http\Controllers;
 
 use Illuminate\Support\Facades\Auth;
-use PlatziPHP\Post;
+use TelusApp\Committee;
 
 class HomeController extends Controller
 {
@@ -14,9 +14,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $posts = Post::with('author')->get();
+        $committees = Committee::with('author')->get();
 
-        return view('home', ['posts' => $posts]);
+        return view('home', ['committees' => $committees]);
     }
 
     /**

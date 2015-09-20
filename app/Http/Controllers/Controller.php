@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Http\Controllers;
+namespace TelusApp\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

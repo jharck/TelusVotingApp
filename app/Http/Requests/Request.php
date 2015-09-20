@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Http\Requests;
+namespace TelusApp\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

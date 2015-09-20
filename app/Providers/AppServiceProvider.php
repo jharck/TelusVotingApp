@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Providers;
+namespace TelusApp\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

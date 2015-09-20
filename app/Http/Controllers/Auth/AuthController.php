@@ -1,10 +1,10 @@
 <?php
 
-namespace PlatziPHP\Http\Controllers\Auth;
+namespace TelusApp\Http\Controllers\Auth;
 
-use PlatziPHP\User;
+use TelusApp\User;
 use Validator;
-use PlatziPHP\Http\Controllers\Controller;
+use TelusApp\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

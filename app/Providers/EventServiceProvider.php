@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Providers;
+namespace TelusApp\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'PlatziPHP\Events\SomeEvent' => [
-            'PlatziPHP\Listeners\EventListener',
+        'TelusApp\Events\SomeEvent' => [
+            'TelusApp\Listeners\EventListener',
         ],
     ];
 

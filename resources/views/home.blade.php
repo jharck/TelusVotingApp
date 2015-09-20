@@ -1,21 +1,22 @@
 @extends('layouts.default')
 
 @section('content')
-    <h1>Estos son nuestos posts</h1>
-    <a class="btn btn-primary" href="{{ route('post_create_path') }}">Crear Post</a>
+    <h1>Listado de Partidos</h1>
     <hr>
     <ul class="list-unstyled">
-    @foreach($posts as $post)
+    @foreach($committees as $committee)
         <li>
             <p class="lead">
-                <a href="{{ route('post_show_path', $post->id) }}">
-                    {{ $post->title }}
+                <a href="{{ route('committee_show_path', $committee->id) }}">
+                    {{ $committee->committee_name }}
                 </a>
             </p>
-            <br>
-            creado: {{ $post->created_at }}
             <hr>
         </li>
     @endforeach
     </ul>
+
+    <!-- Counter -->
+    <div><img src="http://simplehitcounter.com/hit.php?uid=1953975&f=16777215&b=255" border="0" height="18" width="83" alt="web counter"></a><br></div>
+    <!-- End Counter -->
 @stop

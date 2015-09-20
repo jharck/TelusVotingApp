@@ -1,8 +1,8 @@
 <?php
 
-namespace PlatziPHP\Http\Controllers\Auth;
+namespace TelusApp\Http\Controllers\Auth;
 
-use PlatziPHP\Http\Controllers\Controller;
+use TelusApp\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller

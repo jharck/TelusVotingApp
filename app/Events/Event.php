@@ -1,6 +1,6 @@
 <?php
 
-namespace PlatziPHP\Events;
+namespace TelusApp\Events;
 
 abstract class Event
 {

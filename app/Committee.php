@@ -1,10 +1,10 @@
 <?php
 
-namespace PlatziPHP;
+namespace TelusApp;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Committee extends Model
 {
     public function author()
     {

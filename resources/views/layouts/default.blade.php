@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>PlatziPHP y Laravel</title>
+    <title>Telus Voting App</title>
     <link rel="stylesheet" href="{{ elixir('css/app.css') }}">
 </head>
 <body>
